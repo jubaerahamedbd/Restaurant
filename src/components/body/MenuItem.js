@@ -1,4 +1,3 @@
-import { size } from 'lodash';
 import React from 'react'
 import {Card, CardImg, CardImgOverlay, CardBody, CardTitle} from 'reactstrap'
 
@@ -10,7 +9,7 @@ const MenuItem = props =>{
                 <CardBody >
                     <CardImg width="100%" alt={props.dish.name} src={props.dish.image} style={{opacity:"0.7"}}/>
                     <CardImgOverlay>
-                        <CardTitle style={{textAlign:"center", fontSize:"30px", fontWeight:"bold",margin:"auto"}}>{props.dish.name}</CardTitle>
+                        <CardTitle onClick={props.onDishSelect} style={{textAlign:"center", fontSize:"30px", fontWeight:"bold",margin:"auto", cursor:"pointer"}}>{props.dish.name}</CardTitle>
                     </CardImgOverlay>
                 </CardBody>
 

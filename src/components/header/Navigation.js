@@ -6,9 +6,8 @@ const Navigation=()=>{
         <div>
         <Navbar dark color="dark">
             <div className="container">
-                <NavbarBrand href="/">Restaurant</NavbarBrand>
+                <NavbarBrand href="/" style={{fontSize:"35px"}}>Restaurant</NavbarBrand>
             </div>
-
         </Navbar>
           
         </div>
