@@ -1,20 +1,20 @@
 import React from 'react'
-import {Card, CardImg, CardImgOverlay, CardBody, CardTitle} from 'reactstrap'
+import { Card, CardImg, CardImgOverlay, CardBody, CardTitle } from 'reactstrap'
 
-const MenuItem = props =>{
+const MenuItem = props => {
     console.log(props);
-    return(
+    return (
         <div>
-            <Card style={{margin:"10px auto"}}>
+            <Card style={{ margin: "10px auto" }}>
                 <CardBody >
-                    <CardImg width="100%" alt={props.dish.name} src={props.dish.image} style={{opacity:"0.7"}}/>
+                    <CardImg width="100%" alt={props.dish.name} src={props.dish.image} style={{ opacity: "0.7" }} />
                     <CardImgOverlay>
-                        <CardTitle onClick={props.onDishSelect} style={{textAlign:"center", fontSize:"30px", fontWeight:"bold",margin:"auto", cursor:"pointer"}}>{props.dish.name}</CardTitle>
+                        <CardTitle onClick={props.onDishSelect} style={{ textAlign: "center", fontSize: "30px", fontWeight: "bold", cursor: "pointer" }}>{props.dish.name}</CardTitle>
                     </CardImgOverlay>
                 </CardBody>
 
             </Card>
-            
+
         </div>
     )
 }
