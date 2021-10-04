@@ -8,15 +8,15 @@ class Menu extends Component {
     state = {
         dishes: DISHES,
         SelectedDish: null,
-        modalOpen:false
+        modalOpen: false
     }
-    onDishSelect = dish => { 
-        this.setState({ 
+    onDishSelect = dish => {
+        this.setState({
             SelectedDish: dish,
             modalOpen: !this.state.modalOpen
-         })
+        })
     }
-    toggleModal = ()=>{
+    toggleModal = () => {
         this.setState({
             modalOpen: !this.state.modalOpen
         })
