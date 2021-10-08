@@ -1,9 +1,10 @@
-import React,{Component} from "react";
+import React, { Component } from "react";
 
-class Home extends Component{
-    render(){
-        document.title ="Home || Restaurant";
-        return(
+class Home extends Component {
+   
+    render() {
+        document.title = "Home || Restaurant";
+        return (
             <div></div>
         );
     }
