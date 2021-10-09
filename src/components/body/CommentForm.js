@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Form, Button, Input } from 'reactstrap'
 
+
 class CommentForm extends Component {
     constructor(props) {
         super(props)
@@ -8,7 +9,6 @@ class CommentForm extends Component {
             author: "",
             rating: "",
             comment: ""
-
         }
         this.handleInputChange = this.handleInputChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
@@ -18,11 +18,10 @@ class CommentForm extends Component {
         this.setState({
             [event.target.name]: event.target.value
         })
-
     }
 
     handleSubmit = event => {
-        console.log(this.state);
+        this.props.addComment(this.props.dishId, this.state.rating, this.state.author, this.state.comment)
         this.setState({
             author: "",
             rating: "",
@@ -33,7 +32,9 @@ class CommentForm extends Component {
     }
 
     render() {
+
         return (
+
             <div>
                 <Form onSubmit={this.handleSubmit}>
                     <Input type="text" name="author" onChange={this.handleInputChange} value={this.state.author} placeholder="Your Name" required />
