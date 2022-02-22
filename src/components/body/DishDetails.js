@@ -15,7 +15,7 @@ const DishDetails = (props) => {
                         <p style={{ fontSize: "15px", fontWeight: "bold", color: "red" }}>{props.dish.price} BDT</p>
                         <hr />
                         <LoadComments comments={props.comments} />
-                        <ht/>
+                        <hr/>
                         <CommentForm dishId={props.dish.id} addComment={props.addComment}/>
 
 
